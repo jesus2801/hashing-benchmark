@@ -50,7 +50,6 @@ def run():
        hours(averages['hashlib'] * table_size)]
   ]
   headers = ["Names", "Bcrypt", "Hashlib"]  # headers of the table
-
   print(tabulate(table, headers=headers, tablefmt="grid"))  # prints the table with grid layout
 
 
