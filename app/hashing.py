@@ -12,7 +12,7 @@ def hashlib_get_hashed_password(plaint_text_password):
   return blake2b(plaint_text_password.encode()).hexdigest()
 
 
-hash = {
+hash = { # exports functions
     'bcrypt': bcrypt_get_hashed_password,
     'hashlib': hashlib_get_hashed_password
 }
